@@ -41,7 +41,7 @@ void TPQueue<T>::push(const T& r) {
             header = c2;
         } else {
             c1 = header;
-            for (int i = 1; i < n; i++) {
+            for (int i = 1; i < q; i++) {
                 c1 = c1->n;
             }
             c2->n = c1->n;
